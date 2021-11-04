@@ -1,0 +1,95 @@
+/*--------body starts-------*/
+
+h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  font-family: 'Montserrat', sans-serif '700';
+}
+
+/*--------body ends ---------*/
+/*-------- start class ----------*/
+
+/**------> bottom-container styling----->***/
+.bottom-container {
+  background-color: rgb(255,255,255);
+  height: 500px;
+  width: 450px;
+  padding-top: 30px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+/*---------> main content styling ------>*/
+.hero-icon {
+  margin: 80px 0 auto;
+  position: relative;
+  top: 5px;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.songs {
+  height: 350px;
+  width: 350px;
+  margin: inherit;
+  color: #9E9D89;
+}
+.h3-1{
+  color: #9A9483;
+}
+.underline {
+  position: absolute;
+  right:50px;
+  bottom: 35px;
+}
+.Annual {
+  line-height: 15px;
+  position: relative;
+  right: 5px;
+  background-color: #F9F9F9;
+  padding: 2px;
+  margin:auto 10px;
+  border-radius: 16px;
+
+
+}
+/**--------> end of main content styling-------->*/
+
+/***--------> order summary header ------>***/
+.black, .order-summary{
+  color: #3A4750;
+  font-family: 'Montserrat Alternates', sans-serif,'700';
+}
+/***--------> Music Icon Position set to absolute -------->***/
+.music-icon {
+  position: absolute;
+  left: 16px;
+  bottom: 15px;
+}
+
+/***---------> background color,text color, border-radius and padding
+of proceed to payment bottom ---------->***/
+.proceed {
+  background-color: #0F4C75;
+  color: #ffffff;
+  padding: 0.5px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/***<------- cancel order sizing -------->***/
+.cancel-order {
+  font-size: 13px;
+}
+.black, .price {
+margin-right: 3rem;
+}
