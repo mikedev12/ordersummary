@@ -1,6 +1,27 @@
+/*
+I recommed to use containers and display like flexbox and grid, 
+so you can be familiarize with frameworks like bootstrap and 
+you can reuse your code.
+
+(You use the positions very well, congrats)
+*/
+
+/*
+Also follow the Style Guide so we can get close to the desing
+I left you a link where yo can convert HSV to RGB and to HEX:
+- https://www.rapidtables.com/convert/color/hsv-to-rgb.html
+*/
+
+/*
+I recommed you to develop and design mobile first, 
+remember that most of the times users enter to your 
+website from their smartphones.
+*/
+
+
 /*--------body starts-------*/
 
-h1 {
+/* h1 {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -13,13 +34,20 @@ h3{
 p{
   font-family: 'Montserrat', sans-serif '700';
 }
+*/
+
+body {
+  font-family: 'Quicksand', sans-serif; /*With this rule you add the font Quicksand to all your document*/
+}
+
 
 /*--------body ends ---------*/
 /*-------- start class ----------*/
 
 /**------> bottom-container styling----->***/
 .bottom-container {
-  background-color: rgb(255,255,255);
+  /* background-color: rgb(255,255,255);*/
+  background-color: hsl(225, 100%, 98%);
   height: 500px;
   width: 450px;
   padding-top: 30px;
@@ -41,15 +69,39 @@ p{
   height: 350px;
   width: 350px;
   margin: inherit;
-  color: #9E9D89;
+  /* color: #9E9D89; */
+  color: hsl(224, 23%, 55%); 
+  /*Try to use the colors of the design guide*/
 }
 .h3-1{
-  color: #9A9483;
+  /* color: #9A9483; */
+  font-weight: 500;
+  /*Try to use a weight similar to the desing*/
+  color: hsl(224, 23%, 55%); 
+  /*Try to use the colors of the design guide*/
+}
+
+.title-one {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
 }
 .underline {
   position: absolute;
   right:50px;
   bottom: 35px;
+}
+
+.underline a {
+  /*Try to use the style guide*/
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.underline a:hover { /*With the pseudo class :hover you tell css that when the user have the cursor on the element change the rules for the ones youre going to write below*/
+  /*This is part of the requierments of the challenge*/
+  text-decoration: none;
+  color: hsl(245, 75%, 65%);
 }
 .Annual {
   line-height: 15px;
@@ -79,8 +131,10 @@ p{
 /***---------> background color,text color, border-radius and padding
 of proceed to payment bottom ---------->***/
 .proceed {
-  background-color: #0F4C75;
+  /* background-color: #0F4C75; */
+  background-color: hsl(245, 75%, 52%);
   color: #ffffff;
+  font-weight: 700;
   padding: 0.5px;
   border-radius: 10px;
   font-size: 18px;
@@ -89,7 +143,13 @@ of proceed to payment bottom ---------->***/
 /***<------- cancel order sizing -------->***/
 .cancel-order {
   font-size: 13px;
+  font-weight: 700;
 }
 .black, .price {
 margin-right: 3rem;
 }
+/*
+
+I hope it help you. I'm still learnig but those where my recomendations.
+
+*/
