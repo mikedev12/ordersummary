@@ -6,18 +6,34 @@
   <title>Frontendmentor | Hub</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="images/favicon-32x32.png">
+  <!-- The font that the stule-guide.ms recomend us to use -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <style>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style> /*You should use this rules in your css file*/
     body {
+      background-color: hsl(225, 100%, 94%); /*You also need to add the background color (It is in style-guide.md file)*/
       background-image: url("images/pattern-background-desktop.svg");
+      background-size: cover; /*We tell css to cover the background with the image*/
+      background-repeat: no-repeat; /*So you don't repeat the image*/
+      background-position-y: -500px;
       text-align: center;
+
     }
   </style>
 </head>
 
 <body>
+  <!-- 
+    Try to get all your content in one container
+    that will make many things easier for you, belive me.
+
+    You can use something like: 
+    <div class="container">
+      Content here.
+    </div>
+   -->
   <div class="top-container">
     <img class="hero-icon" src="images/illustration-hero.svg" alt="hero-icon">
   </div>
@@ -27,9 +43,20 @@
 
     </div>
     <div class="songs">
-      <h3 class="h3-1">You can now Listen to Millions of Songs, audiobooks and podcasts on
+      <!-- Try not use semantic labels like <h> when you don't need to  -->
+      <!-- 
+        Also instead of use "h3-1" as your class you can try: "title-one" or
+        "title title-one" (So you can give general styles to the class title
+        and specific for title-one)
+
+      -->
+      <!-- <h3 class="h3-1">You can now Listen to Millions of Songs, audiobooks and podcasts on
         any device anywhere you like!
-      </h3>
+      </h3> -->
+      <p class="title-one">
+        You can now Listen to Millions of Songs, audiobooks and podcasts on
+        any device anywhere you like!
+      </p>
       <br>
       <div class="">
 
@@ -37,21 +64,33 @@
           <div class="music-icon">
             <img src="images/icon-music.svg" alt="music-icon">
           </div>
+          <!-- 
+            Again instead of use one class per element you can use a general 
+            class to apply them the same values you need for them.
+           -->
           <h3 class="black">Annual Plan </h3>
           <div class="price">
             <h3> $59.99/year</h3>
           </div>
           <div class="underline">
-            <a href="#">change</a>
+            <a href="#">Change</a>
           </div>
         </div>
         <br> <br>
         <div class="proceed">
-          <p> <a href="#" style="text-decoration: none; color: #ffffff;"> Proceed to Payment</a></p>
+          <p>
+            <!-- Try to add these style rules on your CSS file -->
+            <a href="#" style="text-decoration: none; color: hsl(225, 100%, 98%);"> Proceed to Payment</a>
+          </p>
         </div>
         <br>
         <div class="cancel-order">
-          <h3> <a href="#" style="text-decoration: none; color: #9A9483;">cancel order</a></h3>
+          <!-- Try not use semantic labels like <h> when you don't need to  -->
+          <!-- <h3> <a href="#" style="text-decoration: none; color: #9A9483;">Cancel order</a></h3> -->
+          <p>
+            <!-- Try to add these style rules on your CSS file -->
+            <a href="#" style="text-decoration: none; color: hsl(224, 23%, 55%);">Cancel order</a>
+          </p>
         </div>
 
 
@@ -67,3 +106,7 @@
 </body>
 
 </html>
+ <!-- 
+   I hope it help you. I'm still learnig but those where my recomendations.
+   My repo: https://github.com/emilunageo/order-summary
+  -->
